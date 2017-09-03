@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta />
+<title></title>
+</head>
+<body>
+<h1>LIST OF RECEPIENTS:</h1>
+<table>
+
+<!--  <tr td:each="mail : ${recipients}">
+	<td td:text="${mail.name}"></td>
+	<td td:text="${mail.id}"></td>
+	<td td:text="${mail.toMail}"></td>
+	<td td:text="${mail.ccMail}"></td>
+	<td td:text="${mail.bccMail}"></td>
+
+</tr> 
+ -->
+
+ <tr th:each="mail : ${recipients}">
+ 	<th th:text="${mail.name}"></th>
+ 	<th th:text="${mail.id}"></th>
+	<th th:text="${mail.toMail}"></th>
+	<th th:text="${mail.ccMail}"></th>
+	<th th:text="${mail.bccMail}"></th>
+
+</tr>
+</table>
+</body>
+</html>
